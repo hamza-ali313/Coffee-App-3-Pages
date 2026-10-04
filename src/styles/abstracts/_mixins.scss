@@ -1,0 +1,34 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@mixin up($key) {
+    @media (min-width: map.get($bp, $key)) {
+        @content;
+    }
+}
+
+@mixin down($key) {
+    @media (max-width: map.get($bp, $key) - 0.02px) {
+        @content;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin display-heading($size: 3.5rem) {
+    font-family: $font-display;
+    font-weight: 500;
+    line-height: 1.05;
+    font-size: clamp(#{$size * 0.6}, 5vw, #{$size});
+}
+
+@mixin focus-ring {
+    &:focus-visible {
+        outline: 2px solid $c-orange;
+        outline-offset: 3px;
+    }
+}

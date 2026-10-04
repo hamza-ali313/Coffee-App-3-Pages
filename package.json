@@ -1,0 +1,21 @@
+{
+  "name": "coffee-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "flatpickr": "^4.6.13",
+    "pinia": "^2.3.1",
+    "swiper": "^11.2.4",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "sass-embedded": "^1.83.4",
+    "vite": "^5.4.11"
+  }
+}
