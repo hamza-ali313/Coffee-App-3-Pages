@@ -111,6 +111,7 @@ const right = ['About Us', 'Visit Dee']
   .header__bar {
     background-image: none;
     padding: unset;
+    flex-direction: row-reverse;
   }
 
   .header__toggle {

@@ -23,7 +23,7 @@ defineProps({ to: [String, Object], href: String, variant: { type: String, defau
     color: $c-white;
 
     &:hover {
-      background: darken($c-olive, 8%);
+      background: color.adjust($c-olive, $lightness: -8%);
     }
   }
 
@@ -32,7 +32,7 @@ defineProps({ to: [String, Object], href: String, variant: { type: String, defau
     color: $c-white;
 
     &:hover {
-      background: darken($c-tan, 6%);
+      background: color.adjust($c-tan, $lightness: -6%);
     }
   }
 }
